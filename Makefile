@@ -1,6 +1,6 @@
 DOCKER_USERNAME?=rafaeljesus
 NAME=dummy-service
-BUILD_DIR ?= bin
+BUILD_DIR?=bin
 GO_LINKER_FLAGS=-ldflags="-s -w"
 
 all: build docker-build docker-push docker-run
